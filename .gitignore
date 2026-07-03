@@ -1,0 +1,22 @@
+# Azure and VS Code files
+.azure/
+.vscode/
+*.env
+*.publishsettings
+*.user
+*.suo
+*.log
+
+# Parameter and secret files (except examples)
+parameters.local.json
+parameters.dev.json
+parameters.prod.json
+*.secrets.json
+*.pfx
+*.pem
+*.key
+
+# System/OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
