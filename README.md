@@ -22,8 +22,9 @@ A hands-on Azure administration and infrastructure-as-code portfolio built while
 - **Identity & Access**: RBAC Role Assignments, Azure AD/Entra ID User/Group Management **[Learning Area]**
 - **Governance**: Azure Resource Tags, Resource Locks, Azure Policy **[Learning Area]**
 - **Storage**: Storage Account Configurations, Lifecycle Management, SAS Tokens
-- **Core Networking**: Virtual Networks (VNets), Subnets, Route Tables, Network Security Groups (NSGs) **[Learning Area]**
+- **Core Networking**: Virtual Networks (VNets), Subnets, Route Tables, Network Security Groups (NSGs) **[Learning Area]**, Azure Traffic Manager
 - **Compute**: Virtual Machines, VMSS, Custom Extensions **[Learning Area]**
+- **Resiliency & Chaos Engineering**: Azure Chaos Studio, Fault Injection, Cross-Region High Availability & Failover Validation
 - **Monitoring**: Azure Monitor, Log Analytics, KQL Queries, Alerts **[Learning Area]**
 - **CI/CD**: GitHub Actions workflows for template linting and validation **[Future Roadmap]**
 
@@ -34,6 +35,7 @@ A hands-on Azure administration and infrastructure-as-code portfolio built while
 | Lab ID | Topic | Key Skills Demonstrated | Status |
 |---|---|---|---|
 | [Lab 01](./labs/01-arm-parameterized-storage-account/) | Parameterized Storage Account with ARM | ARM JSON templates, parameter constraints, allowed values, deployment outputs, PowerShell automation | **Completed** |
+| [Lab 04](./labs/04-traffic-manager-chaos-resiliency/) | Cross-Region Resiliency with Traffic Manager and Chaos Studio | App Service, priority routing, health probes, managed identity, RBAC, chaos engineering, automatic failover and failback | **Completed** |
 
 ---
 

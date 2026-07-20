@@ -32,6 +32,12 @@ Focuses on resource provisioning consistency, access control, and organizational
 
 Focuses on core administrative duties, troubleshooting, network configurations, and monitoring setups.
 
+- **[Completed]** **Lab 04 — Cross-Region Resiliency with Azure Traffic Manager and Chaos Studio**
+  - Priority-based cross-region traffic routing
+  - Controlled App Service failure injection
+  - Managed identity and least-privilege permissions
+  - Failover and failback validation
+  - Cost cleanup
 - **[Planned]** **VNet, Subnets, and Network Security Groups (NSGs)**
   - Setting up multi-subnet VNets with custom route tables.
   - NSG rule configuration and troubleshooting connectivity issues.
