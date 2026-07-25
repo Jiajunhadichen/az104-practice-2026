@@ -47,7 +47,6 @@ For a detailed design overview, see [architecture.md](./architecture/architectur
 For detailed command-line scripts and step-by-step instructions, see [implementation-steps.md](./docs/implementation-steps.md).
 
 ---
-
 ## Validation Evidence
 
 The resiliency configurations were validated through functional tests:
@@ -56,18 +55,7 @@ The resiliency configurations were validated through functional tests:
 - **Soft Delete and Restoration Test**: Verified that a deleted blob returned HTTP 404, but was successfully recovered via CLI commands.
 - **Versioning Rollback Test**: Uploaded a second version, verified the new content was live, and then successfully rolled back to version 1.
 
-For sanitized terminal output and verification evidence, see [validation.md](./docs/validation.md).
-
-### Planned Screenshot Placeholders
-- [01-storage-account-created.png](./screenshots/01-storage-account-created.png)
-- [02-ra-grs-enabled.png](./screenshots/02-ra-grs-enabled.png)
-- [03-anonymous-access-enabled.png](./screenshots/03-anonymous-access-enabled.png)
-- [04-public-container.png](./screenshots/04-public-container.png)
-- [05-public-blob-url.png](./screenshots/05-public-blob-url.png)
-- [06-data-protection-settings.png](./screenshots/06-data-protection-settings.png)
-- [07-soft-delete-recovery.png](./screenshots/07-soft-delete-recovery.png)
-- [08-version-history.png](./screenshots/08-version-history.png)
-- [09-version-restored.png](./screenshots/09-version-restored.png)
+For sanitized terminal output and verification logs, see [validation.md](./docs/validation.md).
 
 ---
 

@@ -28,9 +28,7 @@ az storage account create \
 - The storage account is successfully provisioned.
 - Redundancy is set to RA-GRS (providing cross-region read access to secondary replica).
 - Account-level setting `allowBlobPublicAccess` is set to `true`.
-
-![Storage Account Created](../screenshots/01-storage-account-created.png)
-![RA-GRS Redundancy Enabled](../screenshots/02-ra-grs-enabled.png)
+- The settings can be verified manually in the Azure Portal by checking the storage account's **Redundancy** and **Configuration** blades.
 
 ---
 
@@ -41,8 +39,9 @@ az storage account create \
 3. Create a new container named `public`.
 4. Set the **Anonymous access level** for the container to **Blob (anonymous read access for blobs only)**. This ensures that while individual blobs are accessible via direct URL, listing the container's blobs anonymously is blocked.
 
-![Anonymous Access Enabled](../screenshots/03-anonymous-access-enabled.png)
-![Public Container Configured](../screenshots/04-public-container.png)
+*Expected Verification*:
+- The container anonymous access level is set to `Blob`.
+- This can be verified in the Azure Portal under the **Containers** blade, checking the "Anonymous access level" column.
 
 ---
 
@@ -68,10 +67,12 @@ az storage account blob-service-properties update \
   --enable-versioning true
 ```
 
-![Data Protection Settings](../screenshots/06-data-protection-settings.png)
+*Expected Verification*:
+- Blob soft delete, container soft delete, and blob versioning status show as Enabled with the specified retention days.
+- The configuration can be reviewed in the **Data protection** menu in the Azure Portal.
 
 ---
 
 ## Step 4: Perform Public Access and Versioning Operations
 
-Refer to [validation.md](./validation.md) for verification procedures and how version restoration operations were executed.
+Refer to [validation.md](./validation.md) for validation procedures and expected/observed results.
