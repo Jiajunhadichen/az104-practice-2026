@@ -1,46 +1,8 @@
-# Azure Operations Lab
+# az104-practice-2026
 
-A hands-on Azure administration and infrastructure-as-code portfolio built while preparing for the AZ-104 certification.
+Early AZ-104 practice from July 2026, kept as a learning record. It is unstructured and no longer maintained.
 
-## Scope & Design Philosophy
-
-- **AZ-104 Focus**: This repository begins directly with the AZ-104 learning phase. Fundamental/introductory exercises from the AZ-900 level are intentionally excluded.
-- **Operational Reality**: Every lab in this repository represents a real deployment completed on a live Azure environment. There are no simulated or fabricated deployments.
-- **Quality Standards**: Each laboratory is designed with five key focuses:
-  1. **Reproducibility**: Clear automated scripts and templates.
-  2. **Validation**: Explicit steps to check and verify the deployment state.
-  3. **Troubleshooting**: Honest documentation of real-world errors and their corresponding fixes.
-  4. **Security Awareness**: Mandatory sanitization of credentials, secrets, and identity information.
-  5. **Cost Cleanup**: Dedicated cleanup routines to ensure zero cost footprint.
-
----
-
-## Technical Skills Showcase
-
-- **Infrastructure as Code (IaC)**: ARM Templates (JSON), Bicep **[Learning Area]**
-- **Automation**: Azure PowerShell (Az Module), Azure CLI
-- **Identity & Access**: RBAC Role Assignments, Azure AD/Entra ID User/Group Management **[Learning Area]**
-- **Governance**: Azure Resource Tags, Resource Locks, Azure Policy **[Learning Area]**
-- **Storage**: Storage Account Configurations, Lifecycle Management, SAS Tokens
-- **Core Networking**: Virtual Networks (VNets), Subnets, Route Tables, Network Security Groups (NSGs) **[Learning Area]**, Azure Traffic Manager
-- **Compute**: Virtual Machines, VMSS, Custom Extensions **[Learning Area]**
-- **Resiliency & Chaos Engineering**: Azure Chaos Studio, Fault Injection, Cross-Region High Availability & Failover Validation
-- **Monitoring**: Azure Monitor, Log Analytics, KQL Queries, Alerts **[Learning Area]**
-- **CI/CD**: GitHub Actions workflows for template linting and validation **[Future Roadmap]**
-
----
-
-## Lab Portfolio Index
-
-| Lab ID | Topic | Key Skills Demonstrated | Status |
-|---|---|---|---|
-| [Lab 01](./labs/01-arm-parameterized-storage-account/) | Parameterized Storage Account with ARM | ARM JSON templates, parameter constraints, allowed values, deployment outputs, PowerShell automation | **Completed** |
-| [Lab 04](./labs/04-traffic-manager-chaos-resiliency/) | Cross-Region Resiliency with Traffic Manager and Chaos Studio | App Service, priority routing, health probes, managed identity, RBAC, chaos engineering, automatic failover and failback | **Completed** |
-
----
-
-## Getting Started
-
-1. Read the global [Repository Guidelines](./docs/repository-guidelines.md) to understand structure, security, and screenshot standards.
-2. Review the [Roadmap](./ROADMAP.md) to see planned laboratory content.
-3. To replicate any lab, navigate to its directory under `labs/` and follow the instructions in its respective `README.md`.
+Lab folders:
+- `labs/01-arm-parameterized-storage-account/`: storage account deployed from a parameterized ARM template, with PowerShell deploy and cleanup scripts.
+- `labs/04-traffic-manager-chaos-resiliency/`: Traffic Manager priority routing in front of two App Service apps; failover test by stopping the primary app on purpose.
+- `labs/blob-public-website/`: public read-only blob container with soft delete and versioning.
